@@ -1,0 +1,13 @@
+{
+  "auth":{
+    "access_token": "ACCESS_TOKEN", // Ваш токен
+    "isGroup": false // Из группы?
+  },
+  "bot": {
+    "sendLogsToUser": true, // Отправлять логи пользователю?
+    "logSettings": true // Логгировать настройки?
+  },
+  "vk":{
+    "vkApi": "https://api.vk.com/method" // ссылка на api vk
+  }
+}
