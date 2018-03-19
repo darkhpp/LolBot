@@ -21,20 +21,9 @@ object ModuleRegistry
 
         moduleInstances.forEach {
             logger.info("* -> ${it.value.getModuleName()}...")
-            if(!it.value.onEnable())
-            {
-                logger.error("Ошибка в ${it.value.getModuleName()}")
-                moduleInstances.remove(it.key)
-            }
+            it.value.onEnable()
         }
-        /*
-        val iterator = moduleInstances.iterator()
 
-        while (iterator.hasNext()) {
-            val element = iterator.next()
-
-        }
-        */
         logger.info("Всего загружено ${moduleInstances.size} модуля/модулей.")
     }
 }

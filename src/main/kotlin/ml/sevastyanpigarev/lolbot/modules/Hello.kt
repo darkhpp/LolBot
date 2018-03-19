@@ -1,12 +1,13 @@
 package ml.sevastyanpigarev.lolbot.modules
 
-import com.google.gson.JsonArray
 import ml.sevastyanpigarev.lolbot.api.BotModule
+import ml.sevastyanpigarev.lolbot.api.Module
 
+@Module("HelloModule", arrayOf("qq", "привет"))
 class Hello : BotModule
 {
-    override fun process_commands(args: JsonArray): String {
-        if(args[5].asString.toLowerCase() in arrayOf("!qq", "!привет", "!ку", "!здравствуйте"))
+    override fun process_commands(command: String, cmdArgs: Array<String>, sender: String): String {
+        if(command.toLowerCase() in arrayOf("qq", "привет", "ку", "здравствуйте"))
             return "Здравствуйте, LOLBot вас слушает."
         return ""
     }
@@ -16,7 +17,7 @@ class Hello : BotModule
     }
 
     override fun onEnable(): Boolean {
-        return true
+        return false
     }
 
 }

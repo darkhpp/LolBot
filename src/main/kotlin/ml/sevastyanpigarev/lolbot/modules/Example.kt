@@ -1,14 +1,14 @@
 package ml.sevastyanpigarev.lolbot.modules
 
-import com.github.sevastyandark.logio.LoggerFactory
-import com.google.gson.JsonArray
 import ml.sevastyanpigarev.lolbot.api.BotModule
+import ml.sevastyanpigarev.lolbot.api.Module
 
+@Module("Example", arrayOf("тест"))
 class Example : BotModule
 {
-        override fun process_commands(args: JsonArray): String
+        override fun process_commands(command: String, cmdArgs: Array<String>, sender: String): String
         {
-            if(args[5].asString == "!тест")
+            if(command.toLowerCase() == "!тест")
                 return "Проверка прошла успешно"
             return ""
         }
