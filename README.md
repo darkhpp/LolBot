@@ -1,4 +1,4 @@
-# LolBot
+# LolBot  [![Build Status](https://travis-ci.org/SevastyanDark/LolBot.svg?branch=master)](https://travis-ci.org/SevastyanDark/LolBot)
 
 Бот для социальной сети ВК
 
