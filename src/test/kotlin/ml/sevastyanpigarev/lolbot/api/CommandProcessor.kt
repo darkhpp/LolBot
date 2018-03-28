@@ -12,9 +12,6 @@ object CommandProcessor {
         if (args[0].asInt != 4)
             return
 
-        if (!args[5].asString.startsWith("!")) // TODO
-            return
-
         var realCmd = ""
         val cmd = args[5].asString
         lateinit var cmdArgs: Array<String>

@@ -1,4 +1,4 @@
-# LolBot  [![Build Status](https://travis-ci.org/SevastyanDark/LolBot.svg?branch=master)](https://travis-ci.org/SevastyanDark/LolBot)
+# LolBot  [![Build Status](https://travis-ci.org/SevastyanDark/LolBot.svg?branch=master)](https://travis-ci.org/SevastyanDark/LolBot) [![Known Vulnerabilities](https://snyk.io/test/github/sevastyandark/lolbot/badge.svg?targetFile=build.gradle)](https://snyk.io/test/github/sevastyandark/lolbot?targetFile=build.gradle)
 
 Бот для социальной сети ВК
 
